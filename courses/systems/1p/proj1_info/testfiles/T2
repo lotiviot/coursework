@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo RMB 0: 0x00 0x58
+
+./p1 ALL256 F2T2

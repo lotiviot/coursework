@@ -1,0 +1,5 @@
+what we know: 
+how to pipe
+child and parent manipulation
+calling grep and sort singly
+

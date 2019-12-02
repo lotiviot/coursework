@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rm -rf p2
+rm -f *.o
+
+cp p2TEST2.c p2test.c
+make
+
+./p2
+
+rm -f p2

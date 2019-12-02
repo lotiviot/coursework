@@ -1,0 +1,28 @@
+processes light weight vs heavt weight
+
+light weight processes are threads but can also be called over things
+
+heavy weight processes are referred to as processes
+
+p3 will mainly focus on lightweight processes // main focus on threading
+
+heavy weight processes are tied to an address base where should it created another heavy weight process, then the address base would be copied
+
+because they are tied to address bases in memory and not stored through the registers, then it becomes a harder thing to run some might say heavier
+
+light weight processes also have an address base with instructions, but should it a new thread be created, they will have to be shared
+
+a new address base will not be created
+
+swapped in and out
+
+what our code will need in terms of topics:
+
+we do include the endpoint
+utilise 4 threads
+to split the work in 2
+use the function in time demo in order to get time stamps for the function
+put alarm in your code to verify that your account does not get knocked off system64
+
+look at the thread demos 
+

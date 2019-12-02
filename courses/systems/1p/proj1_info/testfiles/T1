@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo RMB SAME
+
+./p1 ALL256 ALL256

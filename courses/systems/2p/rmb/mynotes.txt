@@ -1,0 +1,28 @@
+so here what i think the general outline of the code will be. 
+overarching the whole program, will be the following items:
+
+the base region and a data structure both of which will be global as they will always need to be accessed
+
+following this, here is what I believe will be the general function of each
+
+heap_init will do the following - 
+DONE I THINK SINCE ITS NOT SUPER COMPLEX
+
+heap_alloc will do the foll0wing -
+first condition, if the whole structure is empty, we will allocate to the first position
+secondly we will do the following,
+while loop that processes the whole data structure to find an open enough space for the byte allocation
+	at each
+
+heap-free will do the following - 
+it will take the information the pointer to area to free and do the following,
+1. first it will iterate through every byte address in that allocated section, and null each address.
+2. afterwards the function will delete the address region from num_bytes
+3. lastly the array will be reordered so that the there are no gaps present within num_bytes
+
+
+compilation
+
+cc -o out.exe file1.c file2.c
+
+

@@ -1,0 +1,13 @@
+our program is going to do the following.
+
+we are first going to check for -hw
+following this we will then fork a new process
+	the child process will run 'nm' on libs func
+	it will return information on the shared library and return functions that are present in the library
+	
+in the parent process we will call those functions that have been linked
+we will print the name of the function as well as the output 
+AND
+if the output = 42 we then star it as well, else, we print out as normale
+
+then it donezo

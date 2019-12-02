@@ -1,0 +1,52 @@
+
+                             Computer Systems
+                                 Project 6
+                                 Fall 2019
+
+
+turnin code:  cs_p6
+
+
+Write a program that takes the full-pathname of a dynamically
+loadable library (*.so file) as its single command-line argument.
+
+As in prior projects, if the program is run with the single command-line
+arg of  -hw  then it should simply  print hello world   and then  exit(0)
+
+
+The program should determine the names of all dynamic symbols for 
+functions that can be invoked.  Ignore functions whose names begin
+with an underscore.  Assume all invokable functions in the library
+take a single integer argument and return an int.
+
+For each function, print its name and the value that it returns when you
+pass it the value 42.
+If any function also returns 42, then print ** next to the output.
+
+So, for example, if I had created a libfoobar.so in our public directory
+that contained functions  f1,f2,f7,f9  then this run:
+
+    ./p6 /nfshome/rbutler/public/courses/cs/libfoobar.so
+
+might produce output like this:
+    
+    f1  33
+    f2  99
+    f7  42  **
+    f9  11
+
+
+Hint:  programs like nm (-D), objdump (-T), readelf (-s) can extract
+dynamic symbol info.
+
+
+TURNIN info:
+    You should submit a tar file of a directory which contains all of the
+    required files (makefile, C source files, header files, etc).
+    Sample tar command to create a tar file from a dir named p6dir:
+	tar cvf p6.tar ./p6dir  ## do *NOT* use full pathname of the dir
+    After un-tarring your project, I will cd to the dir containing
+    it and type:
+        rm -rf p6
+        rm -f *.o *.so *.a
+        make
