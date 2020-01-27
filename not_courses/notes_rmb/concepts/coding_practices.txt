@@ -1,0 +1,16 @@
+this will be a note taking page based around the concepts
+and practices of standardized coding practices which will
+focus on maintaining consistent and concise practices
+in regards to the development of code
+
+This might include concepts such
+consistency
+  length, grouping, indentation
+repetition
+nesting with purpose
+concise and intuitive variables
+conditional statement recognition
+meaningful comments
+
+less common code basis
+directory efficiency, SQL capitalization

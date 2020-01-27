@@ -1,0 +1,14 @@
+The presentation will generally follow the paradigm
+of broad survey coverage to help, but also oblige
+students to enrich themselves further by checking
+out our resources present.
+The presentation, can offer and overview of our more
+CS-related resources amongst things like
+lightning career link
+career development general resources
+the resume critique program
+etc.
+but finish with the more CS related resources
+such as practice interview questions
+thinking strategies
+and the other modules which will follow suite.

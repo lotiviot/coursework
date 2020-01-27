@@ -1,0 +1,25 @@
+The workshop module will be either a series or individual
+set of seminars and workshops presented  to students
+in various rooms and buildings on campus
+
+these targeted just as much as they could be solo standard surveys
+
+possible concept ideas
+  CDC basic services
+  Database utilization
+  resume, branding statement
+  interview basics
+  email etiquette
+  Career Fair promotion
+-------stem presentation ideas----------
+  Programmer interview prep
+  Interview question concepts and walkthroughs
+  version control software survey
+  coding practice
+
+These classes can be free walkin courses as much as
+they can be set classes that student do or do not have to attend
+the general organization would be to have presentations that are entirely comprehensive
+but do not overarch into other presentations
+
+1 presentation 1 topic no overlap

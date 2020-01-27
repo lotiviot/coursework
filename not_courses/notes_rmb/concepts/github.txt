@@ -1,0 +1,16 @@
+Basic concepts of version control systems
+and
+Demonstrations
+-----------------------------------------
+what someone needs to know how to use
+
+should probably demonstrate this with and IDE of some sort as well
+as shell, so as to understand the ideas of the following
+push
+pull
+merge
+checkout
+branch
+conflict resolution
+fetch
+version restoration

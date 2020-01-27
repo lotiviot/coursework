@@ -1,0 +1,2 @@
+the concept of the chrome extension is the following
+it will execute upon the opening of the page

@@ -1,0 +1,18 @@
+4 basic concepts that we can aid in
+-coding standardization
+-technical question
+  -walkthrough practice
+  -question presentation
+-version control practice
+
+6 possible mediums for all
+-class presentation
+-CDC hosted and cooperated workshops
+-PCA type meetings and handlings
+-Greater awareness on the website
+-Better website resources
+  -more basic information and examples of coding type
+    questions
+  -practice modules to interact with PCA's or CDC
+    developed software
+and what not

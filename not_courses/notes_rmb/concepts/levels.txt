@@ -1,0 +1,11 @@
+the levels notes file will essentially be used to
+entertain the creations of questions at levels of all
+CS students, having a basic idea of the curriculum
+of CS and IS students, what is really helpful is being
+able to prepare students early on to write and understand
+the code that they are writing. the problem with this is that
+the questions are often geared towards students who have made it out of
+courses such as Discrete Structures and Algorithms and Data Structures.
+Knowing this, it will be onto us to not only create realistic questions.
+but also attainable questions, should the student be not as far along
+in the program.

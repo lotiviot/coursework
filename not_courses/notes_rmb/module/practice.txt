@@ -1,0 +1,11 @@
+Practice encompasses three main submodules all involving
+direct contact with the CDC in some shape or form.
+This can happen three ways.
+  -electronically
+    -coding review
+    -template question responses
+    -online module creation and practice
+  -in-person meetings
+    -conceptual question practice
+    -guided whiteboard walkthrough
+    -the field as a whole

@@ -1,0 +1,5 @@
+this will be a file centered around the note taking
+for the subtopic of the application or wing that will
+be built in support the technical interview coding
+question as well as supplementary practice in relation
+to computing
