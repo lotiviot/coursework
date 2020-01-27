@@ -84,3 +84,51 @@ X+Y
 ---
 5+4.5
 the handling of int float addition
+
+Cost
+
+the last language evaluation criteria is cost which contains time financial and workflow costs
+
+trade offs
+reliability vs cost of execution
+execution times between python and C
+availability to do things between python and C
+
+Readability vs. writability
+verbosity makes things hard to write
+lack thereof can make things hard to read
+	the learning curve of the language
+
+language categories
+imperitive languages: how the computer should do something
+	requires the computer to follow the exact instructions of the programmer think C or C++ or Java
+declarative languages: what the computer should do
+	requires the computer to already have base layer of instructions what to do think any of the flavors of SQL
+ex. select name from student
+you did ask where the student inforamation is, you simply query and the computer goes and gets that information
+
+ex. some for loop(sysout(student_arr));
+you have to ask the computer to print the exact array in which the student information is stored with a whole lot of variability present in the definition
+
+GCD and lambda calculus
+
+formal computation mode ap program is considered a function from inputs to outputs, defined in terms of simpler functions through a process of refinement
+
+implementation method
+
+compilation method general process .java->lexical analyis->syntax analysis->semantic analysis->IR Generation->where bytecode occurs or---->final code generation after some optimization
+	programs that translate high level language to machine code C or C++ or Java
+pure interpretation
+	programs are interpreted by another program known as an interpreter think visualbasic
+hybrid implementation systems
+	a compromise between compilers and pure interpreters
+	Use: Small and medium systems when efficiency is not the first concern old java
+
+the IR Generation or intermediate representation can be platform independent like in the case of java or java based language which is very nice in allowing it to function over any OS like java or in web environments 
+
+Just-In-Time implementation Systems
+initially translate programs to an intermediat language -> compiles the code into machine code -> maintains machine code for other calls -> JIT systems are common with java -> .NET languages are implemented with a JIT system 
+JIT systems are just conditionally delayed compilers
+think like dynamically linked libraries in C
+
+
