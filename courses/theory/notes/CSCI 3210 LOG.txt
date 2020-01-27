@@ -53,3 +53,34 @@ begin
 
 end
 
+writability is a measure of how easily a language can be used to create programs for a domain
+
+support for abstraction
+
+process abstraction
+	the concept of function
+	the semantics are not necessary and only the output is necessary
+data abstraction
+	the concept of the classes
+	the management of the data is set from the get go and are managed around that data structure
+
+expressivity
+mean the convenience of the language
+strength and number of predefined functions
+
+python vs. java
+print"hello" vs. System.out.println("hello"); //taking out things such as the class definition which must surround the code
+
+reliability
+
+a program is said to be reliable if it performs to its specification under all conditions.
+
+Characteristics contributing to the reliability of a programming language
+
+Type Checking
+X+Y
+---
+5+4
+---
+5+4.5
+the handling of int float addition
