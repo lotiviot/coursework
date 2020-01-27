@@ -1,0 +1,55 @@
+Day #2
+Language Evaluation Criteria
+Programming is the art of telling another human being what one wnats the computer to do
+
+it matters not how exactly the developer understands the code, but that he can communicate the code
+
+the 4 pillars of code
+
+	overall simplicity
+a manageable set of features and constructs
+Minimal feature multiplicity
+more than one way to accomplish a particular operation
+minimal operator overlading
+a single operator symbol has more than one meaning
+
+less ways to complete one task is good
+less ways to define a single instruction is good
+An bloated instruction package is good
+think sql with the structure of select from where -- good example
+think of adding in c++ -- bad example
+
+orthogonality 
+a relatively small set of primitive constructs can be combined in realtively small number of ways
+ex. no pointless datatypes
+more orthogonal means less exceptions within the language
+fewer exceptions makes the code a lot easier to read
+more exceptions is unnecessary complexity and is in turn harder to read
+language already struggle with this 
+
+int x;
+int *p;
+int score[10];
+int **p;
+int *scores[10];
+int y [1][2];
+
+Readability
+
+The presence of adequate facilities for defining data types and data structures in a language is another significant aid to readability.
+
+syntax design
+
+the syntax of form of the elements of a language has a signifcant effect on the readability of programs
+
+variable nomenclature
+
+compound statements
+if
+...
+end if
+
+begin
+
+end
+

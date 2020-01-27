@@ -1,0 +1,34 @@
+MTSU
+#neuron
+
+----------------------------------------------------------1/21/2020---------------------------------------------------------------
+
+UN PW for protected portions of the website
+
+takes advantage or parallel processing in order to replicate the "thinking" processes of the human brain
+parts work together in tandem rather than a more linear and functional program
+
+	data in -> algorithm -> data out
+
+this is the more normal type of programming
+
+	data in -> untrained algorithm -> data out(often bad)
+	with time VVVVVVVVV
+	data in -> trained algorithm -> data out much more algorithm
+
+Neural Nets are for problems that are difficult to code by hand
+
+nodes ~~ neurons
+Main system behaviour is often learned rather than program
+
+born -> move limbs -> flip over -> crawl -> sit -> walk -> walk faster
+
+learning is the optimization of a task based on a given set of tools and times
+also occurs while task is being experienced real life or not
+useful is what makes the task as optimal as possible
+
+important in predicting credit card fraud
+
+base concept an algorithm that codes itself based off of exceptions
+
+
