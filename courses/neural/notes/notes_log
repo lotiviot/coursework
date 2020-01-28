@@ -1,0 +1,82 @@
+MTSU
+#neuron
+
+----------------------------------------------------------1/21/2020---------------------------------------------------------------
+
+UN PW for protected portions of the website
+
+takes advantage or parallel processing in order to replicate the "thinking" processes of the human brain
+parts work together in tandem rather than a more linear and functional program
+
+	data in -> algorithm -> data out
+
+this is the more normal type of programming
+
+	data in -> untrained algorithm -> data out(often bad)
+	with time VVVVVVVVV
+	data in -> trained algorithm -> data out much more algorithm
+
+Neural Nets are for problems that are difficult to code by hand
+
+nodes ~~ neurons
+Main system behaviour is often learned rather than program
+
+born -> move limbs -> flip over -> crawl -> sit -> walk -> walk faster
+
+learning is the optimization of a task based on a given set of tools and times
+also occurs while task is being experienced real life or not
+useful is what makes the task as optimal as possible
+
+important in predicting credit card fraud
+
+base concept an algorithm that codes itself based off of exceptions
+
+-------------------------------------------------1/28/2020--------------------------------------------------------------------------
+
+benefits of knowning CS history
+	History prevents redundant repetition
+	pioneers help to serve as guide stones
+	lol cool
+
+primitive Computer Scientists have always seen parallels between computers and people
+	pros/cons to brains vs. computers
+
+neurals nets just closer to human thought than other studies of artificial intelligence
+
+trinity supercomputer los alamos nat lab vs house fly
+super computer is faster
+	operations
+	transforspeeds
+housefly is more efficient
+	less neurons
+	less tdp
+
+what makes neurons special
+	slow low bandwidth and imprecise
+		no exception handling allows for sensory problems that exist
+
+	cell death, but natural degradation
+
+	always working in parallel with itself
+
+	learning via synapse modding
+
+	connection pathways topologically structured
+
+	there is a spatial orientation to neuron placement
+
+neuron computation
+	the speed of a neuron is slow only 100 pulse per second
+
+	think like recognizing someone 
+	near instaneaneous therefore what is the algorithm that determines that
+	less than 100 steps if one neuron
+	multiple neurons work in tandem
+	maybe millions
+
+neurons can implement the moment it is made available
+
+brains kind of equal computers
+
+
+
