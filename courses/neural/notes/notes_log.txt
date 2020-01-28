@@ -78,5 +78,25 @@ neurons can implement the moment it is made available
 
 brains kind of equal computers
 
+initial discoveries
 
+pandemonium
+adaline
+theory of NA reinforcement systems
+principles of neurodynamics
+
+the dark ages of symbolic systems become preferred...
+
+minsky and papert
+plagairized and slandered neural nets
+
+things get deep
+just a whole lot of crazy developments lolol
+GPU's mainly
+
+neurons at their very base are dedicated feature detectors that are designed to detect for a singular feature
+a single neuron works in conjuction to detect for a multitude of other neurons receiving and sending information to other neurons to acheive a task
+information in(excitatory information going in) -> 
+against other information that is already present to trigger or not trigger the neuron -> 
+information out (excitatory information going on to the next neuron, either hi pulse or lo pulse) -> (repeat)
 
