@@ -1,0 +1,4 @@
+basic course information
+un: c1002339
+pw: jg4MDNmY
+URL: svn://svn.cs.mtsu.edu/c1002300/public_html/svn/c1002339

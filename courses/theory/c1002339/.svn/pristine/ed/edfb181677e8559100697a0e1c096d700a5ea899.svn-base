@@ -1,0 +1,167 @@
+Day #2
+Language Evaluation Criteria
+Programming is the art of telling another human being what one wnats the computer to do
+
+it matters not how exactly the developer understands the code, but that he can communicate the code
+
+the 4 pillars of code
+
+	overall simplicity
+a manageable set of features and constructs
+Minimal feature multiplicity
+more than one way to accomplish a particular operation
+minimal operator overlading
+a single operator symbol has more than one meaning
+
+less ways to complete one task is good
+less ways to define a single instruction is good
+An bloated instruction package is good
+think sql with the structure of select from where -- good example
+think of adding in c++ -- bad example
+
+orthogonality 
+a relatively small set of primitive constructs can be combined in realtively small number of ways
+ex. no pointless datatypes
+more orthogonal means less exceptions within the language
+fewer exceptions makes the code a lot easier to read
+more exceptions is unnecessary complexity and is in turn harder to read
+language already struggle with this 
+
+int x;
+int *p;
+int score[10];
+int **p;
+int *scores[10];
+int y [1][2];
+
+Readability
+
+The presence of adequate facilities for defining data types and data structures in a language is another significant aid to readability.
+
+syntax design
+
+the syntax of form of the elements of a language has a signifcant effect on the readability of programs
+
+variable nomenclature
+
+compound statements
+if
+...
+end if
+
+begin
+
+end
+
+writability is a measure of how easily a language can be used to create programs for a domain
+
+support for abstraction
+
+process abstraction
+	the concept of function
+	the semantics are not necessary and only the output is necessary
+data abstraction
+	the concept of the classes
+	the management of the data is set from the get go and are managed around that data structure
+
+expressivity
+mean the convenience of the language
+strength and number of predefined functions
+
+python vs. java
+print"hello" vs. System.out.println("hello"); //taking out things such as the class definition which must surround the code
+
+reliability
+
+a program is said to be reliable if it performs to its specification under all conditions.
+
+Characteristics contributing to the reliability of a programming language
+
+Type Checking
+X+Y
+---
+5+4
+---
+5+4.5
+the handling of int float addition
+
+Cost
+
+the last language evaluation criteria is cost which contains time financial and workflow costs
+
+trade offs
+reliability vs cost of execution
+execution times between python and C
+availability to do things between python and C
+
+Readability vs. writability
+verbosity makes things hard to write
+lack thereof can make things hard to read
+	the learning curve of the language
+
+language categories
+imperitive languages: how the computer should do something
+	requires the computer to follow the exact instructions of the programmer think C or C++ or Java
+declarative languages: what the computer should do
+	requires the computer to already have base layer of instructions what to do think any of the flavors of SQL
+ex. select name from student
+you did ask where the student inforamation is, you simply query and the computer goes and gets that information
+
+ex. some for loop(sysout(student_arr));
+you have to ask the computer to print the exact array in which the student information is stored with a whole lot of variability present in the definition
+
+GCD and lambda calculus
+
+formal computation mode ap program is considered a function from inputs to outputs, defined in terms of simpler functions through a process of refinement
+
+implementation method
+
+compilation method general process .java->lexical analyis->syntax analysis->semantic analysis->IR Generation->where bytecode occurs or---->final code generation after some optimization
+	programs that translate high level language to machine code C or C++ or Java
+pure interpretation
+	programs are interpreted by another program known as an interpreter think visualbasic
+hybrid implementation systems
+	a compromise between compilers and pure interpreters
+	Use: Small and medium systems when efficiency is not the first concern old java
+
+the IR Generation or intermediate representation can be platform independent like in the case of java or java based language which is very nice in allowing it to function over any OS like java or in web environments 
+
+Just-In-Time implementation Systems
+initially translate programs to an intermediat language -> compiles the code into machine code -> maintains machine code for other calls -> JIT systems are common with java -> .NET languages are implemented with a JIT system 
+JIT systems are just conditionally delayed compilers
+think like dynamically linked libraries in C
+
+regular expression:used to specify token pattern
+alphabet: set of symbols used to write regular expressions
+langauge of an RE r: the set of all strings that can match the pattern specified by r.
+
+Definition of regular expression: 
+
+basic regular expressions
+2 types
+	a symbol in alphabet is a regular expression. 
+	
+take a
+L(a) = {a}
+
+LH a is an RE 
+RH a is a character that is represents
+
+	\epsilon (represents an empty string) is also an RE
+ 		will never be a symbol in the alphabet
+
+L(\epsilon) = {'empty'}
+
+operators that can be used to construct more complicated REs
+ex.
+-assume r1 and r2 are REs
+
+1) choice operator ( | )
+	r1 | r2 is an RE.
+		recognize pattern of r1 OR pattern of r2
+
+L(a|b) = {a,b}
+not ordinally defined
+	a|b
+	b|a
+		these are the same
