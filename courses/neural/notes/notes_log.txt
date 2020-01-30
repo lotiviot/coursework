@@ -166,3 +166,9 @@ while it develops, it will also need to save that information
 for simple problems it can be possible to hand wire them, but only works with simple problems
 
 often to set up it is random 
+
+we must know the derivative for this course
+
+play around and do the second openlab to do scalars matrices and the like
+
+will be important for the rest of the semester
