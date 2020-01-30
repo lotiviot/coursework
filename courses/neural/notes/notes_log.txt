@@ -100,3 +100,69 @@ information in(excitatory information going in) ->
 against other information that is already present to trigger or not trigger the neuron -> 
 information out (excitatory information going on to the next neuron, either hi pulse or lo pulse) -> (repeat)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Rate Coding Activation Functions
+Even though action potentials are discrete events they are often summarized together as a firing rate
+Zero menas no APs and one means firing at max rate 
+noise therefore we can refer to the following equation
+y=1/(1+x^-1)
+
+Memory
+information or memory is stored in the connections
+Summarized as the 'weight' of the connection(large/small connection)
+
+we can summarize firing weights of neurons as the above equation 
+and the change in neurons as 
+
+we will have a number that will describe the strength of that connection
+
+the net input for unit i can be "folded" into a single value, net of j, which weights the activation
+of the sending neuron x of i by the strength of the synaptic connection between i and j, weight of i and j
+
+the sum of all weighted activations into a unit plus a bias weight, w of O, is the total net input.
+
+can have both positive and negative values
+very many variations of neurons can have varying effects and said excitator and inhibitory values +/-
+
+Absctacting Details:
+
+Activation Functions
+The net input can then be transformed into a rate code using an activation function
+a commonly used function is the logistic sigmoid
+f(net of j) = 1/(1+e^(-net of j))
+
+posible to have negative weights therefore mirroring inhibitory effect
+
+The chagne of post synaptic membrane potential is reflected in the net input
+
+The amount of neurons changes how we view the item
+
+if a layer has less than three units it is not impossible but passed that we must consider the hyperplane
+
+how the layers of the nn work
+
+input layer -> hidden layers -> hidden layers -> output layer
+
+if no hidden layers are present, then it is a single layer 
+input layer -> output layer
+
+else it is a multilayer network
+
+input layer -> hidden layers -> hidden layers -> output layer
+
+problems where it difficult to come up with an algorithmic solutions
+
+we are not trying to give the code to the net, learns through repeated exposure
+
+it has been proven that given enough units and using only a single layer of hidden units, 
+any function can be approximated to an arbitrary degree of precision
+
+a single neuron will search for a single piece of the puzzle than pass its finds to the next layer 
+this next layer will synthesize information from the first layer to search for a complex combination
+this will repeat in complexity until the output layer with a hopefully correct answer
+
+while it develops, it will also need to save that information
+
+for simple problems it can be possible to hand wire them, but only works with simple problems
+
+often to set up it is random 
