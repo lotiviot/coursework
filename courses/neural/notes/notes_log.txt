@@ -172,3 +172,55 @@ we must know the derivative for this course
 play around and do the second openlab to do scalars matrices and the like
 
 will be important for the rest of the semester
+----------------------------------------------------------------2/4/2020------------------------------------------------------------------------
+Learning
+Notice that most of the information encoded by a feed-forward network is in the connection(and bias) weights 
+	So the question becomes how does one calculate the weights?
+		handwired?
+		trial and error
+		rng byoy
+
+The derivative
+	a function is differentiable by its first partial derivative exists 
+	everywhere in its domain for each of its arguments.
+		a function is smooth if all partial derivatives exists
+
+The Chain Rule
+also works for partial derivatives
+derivative of f(g(x)) is derivative of f(g(x)) times the derivative of g(x)
+	r e m e m b e r  t h i s
+
+Linear Review
+A vector is similar to a 1-D array, but geometrically we think of a vector as a point in an n-dimensional
+vector space, where n is the length of the vector.
+
+concepts
+	euclidean 
+	cosine
+	orthogonality
+
+matrices
+	a matrix is similar to a 2-D array
+	multiplying a vector by a matrix produces another vector
+
+the gradient and the hession
+
+for a function of n variables the gradient is a vector
+
+for a function of n variables the hessian is a matrix with each element
+
+Pattern Recognition
+
+the classic classification problem
+
+the statistical pattern recognition problem
+finding a function that properly sets up 
+
+how does learning work and develop in the neuron,
+
+neurons that fire together wire together.
+	as they fire together the function dictates that the two values grw closer together
+this is the fact of learning rules where when training neurons for a certain movement,
+they recognize their importance in tandem and grow closer together in value
+
+neurons fire, neurons self-update, test goes again
