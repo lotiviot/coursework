@@ -224,3 +224,61 @@ this is the fact of learning rules where when training neurons for a certain mov
 they recognize their importance in tandem and grow closer together in value
 
 neurons fire, neurons self-update, test goes again
+
+------------------------------------------------------------------------2/6/2020----------------------------
+
+classification problem is a statistical pattern recog problem involves finding 
+a way to classify objects by their features vectors
+
+building a decision vector for one object against another
+
+feature extraction is the main method, where prior knowledge of the problem is required to be successful
+feeding the system things that are right
+
+imagine function approximation or agression, that is what we are looking for
+
+consider the example
+
+a single layer network of input and output where everything is fully networked
+
+weights are 0 and output units are on linear activation functions with no bias
+
+perceptrons ar eintesting because for problems that could be solved, perceptrons do solve them
+
+single layer nets < multi-layer nets
+
+information is lost when processing down in information such as this,
+	a whole bunch of noise is received are we are to determine the difference between things
+	of all things every what is and is not a cat
+		all other information is ignored
+
+imagine applying it what the net has yet to have seen 
+a set must be fed to system to train it, but eventually
+	it must be able to do it on its own
+
+it must be able to be used on whatever
+
+linear regression is also just as limited in the event that there are more than three classes present
+the line favors bilateral sorting which is favorable in single layer networks but that is it 
+
+even a multilayer network will provide no benefit if the hidden units all use a linear activation function
+
+the utility of mulitple layers can slowly add dimensions the same way that a single layer added a single layer
+
+it has been proven that given a two layer network and enough non linear hidden units
+	any learning problem can be solved as hyperplanes can be endless multiplied in this fashion
+
+where in example the change in weight is equal to the product of alpha omega and zeta
+
+apply unsupervised learning,
+
+different kind of learning rule that tries to adapt the weights into something useful without target information
+
+between layers, we can mix and match different learning techniques in order to optimize layers to certain problems
+
+how does the activation change with respect to those weights
+
+complex but not insane
+	the chain rules enables this to occur
+
+	delta on the receive side times the activation on hte sending side
