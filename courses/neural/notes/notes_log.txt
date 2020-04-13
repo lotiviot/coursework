@@ -282,3 +282,13 @@ complex but not insane
 	the chain rules enables this to occur
 
 	delta on the receive side times the activation on hte sending side
+
+multilayer nets
+linear problems can't solve more complex issues
+however much information can be funnelled down into 0,1 scenarios even the iris problem is a 3 way issue
+linear is still possible
+the key is the activation function
+
+how we can update weights on the inner layers is the key to this
+
+this is where the calculus gets involved with our weights
