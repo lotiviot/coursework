@@ -1,3 +1,0 @@
-main query function
-mail merging from sql server
-CSS and beautifying
