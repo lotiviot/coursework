@@ -1,0 +1,214 @@
+<!-- 
+    Tristan Lotivio
+    Dr. Ralph Butler
+    Advanced Web Technologies 4410-001
+    03/06/21
+
+ -->
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+
+    <style>
+        .vertical-menu {
+        width: 200px;
+        position: absolute;
+        z-index: 10;
+        height: 0px;
+        overflow: hidden;
+        }
+
+        .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+        background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+        background-color: gray;
+        color: white;
+        }
+        #container {
+            border: 4px blue  solid;   
+            display: grid;  
+            height: 1000px;
+            width: 100%;
+            grid-template-columns: 50px 300px auto 300px;
+            grid-template-rows: auto auto 300px;
+            grid-template-areas: 
+                'menu hierarchy build inspector'
+                'menu hierarchy build inspector'
+                'menu hierarchy assets inspector'
+        }
+        .menu-content {
+            grid-area:menu;
+            background-color: red;
+            margin-bottom: 2px;
+            font-size: 36px;
+            column-width: 100%;
+            grid-template-columns: 60px;
+        }
+
+        ul, li {margin:0; padding: 0;}
+
+        .hierarchy-content {
+            display: flex;
+            justify-content:center;
+            grid-area:hierarchy;
+            background-color: white;
+            margin-bottom: 2px;
+            font-size: 36px;
+            column-width: 100%;
+            grid-template-columns: 300px;
+        }
+
+        .build-content {
+            display: flex;
+            justify-content:center;
+            grid-area:build;
+            background-color: blue;
+            font-size: 36px;
+            height: auto;
+            width: auto;
+        }
+        .inspector-content {
+            display: flex;
+            justify-content:center;
+            grid-area:inspector;
+            background-color: yellow;
+            margin-right: 2px;
+            font-size: 36px;
+            grid-template-columns: 300px;
+        }
+        .assets-content {
+            display: flex;
+            justify-content:center;
+            grid-area:assets;
+            background-color: green;
+            margin-top:2px;
+            font-size: 36px;
+            grid-template-rows: 300px;
+            width: auto;
+        }
+        .testing{
+            transform:rotate(0deg);
+        }
+        .testing2{
+            position:absolute;
+            margin-bottom: 100px;
+            margin-right: 0px;
+            margin-top: 120px;
+            transform:rotate(90deg);
+            width: 300px;
+        }
+    </style>
+    <script>
+        function CollapseHierarchy() {
+            var re = new RegExp('(.){4} 300px (.)*')
+            var element = document.getElementById("container")
+            var elemFin = window.getComputedStyle(element, null).getPropertyValue("grid-template-columns")
+            var item = "60px 300px auto 300px"
+            var res = elemFin.split(" ")
+            var temp = re.test(elemFin)
+            if(temp == true){
+                element.style.gridTemplateColumns = res[0] + " 60px auto " + res[3] 
+                document.getElementById("flip-hier").classList.toggle("testing2")
+                document.getElementById("flip-hier").classList.toggle("testing")
+                //document.getElementById("hierarchy-content").classList.remove(testing)
+            }
+            else{
+                element.style.gridTemplateColumns = res[0] + " 300px auto " + res[3] 
+                document.getElementById("flip-hier").classList.toggle("testing")
+                document.getElementById("flip-hier").classList.toggle("testing2")
+            }
+        } 
+        function CollapseAssets() {
+            var re = new RegExp('(.)* 300px')
+            var element = document.getElementById("container")
+            var elemFin = window.getComputedStyle(element, null).getPropertyValue("grid-template-rows")
+            var item = "auto auto 300px"
+            var res = elemFin.split(" ")
+            var temp = re.test(elemFin)
+            if(temp == true){
+                element.style.gridTemplateRows =  "auto auto 60px"
+            }
+            else{
+                element.style.gridTemplateRows = "auto auto 300px" 
+            }
+        } 
+        function CollapseInspector() {
+            var re = new RegExp('^(.)* 300px$')
+            var element = document.getElementById("container")
+            var elemFin = window.getComputedStyle(element, null).getPropertyValue("grid-template-columns")
+            var item = "60px 300px auto 300px"
+            var res = elemFin.split(" ")
+            var temp = re.test(elemFin)
+            if(temp == true){
+                element.style.gridTemplateColumns = res[0] + " " + res[1] + " auto 60px" 
+                document.getElementById("flip-insp").classList.toggle("testing")
+                document.getElementById("flip-insp").classList.toggle("testing2")
+            }
+            else{
+                element.style.gridTemplateColumns = res[0] + " " + res[1] + " auto 300px"
+                document.getElementById("flip-insp").classList.toggle("testing")
+                document.getElementById("flip-insp").classList.toggle("testing2")
+            }
+        }
+        function Menu() {
+            var re = new RegExp('^(.)* 300px$')
+            var element = document.getElementById("menu")
+            var elemFin = window.getComputedStyle(element, null).getPropertyValue("height")
+            console.log(elemFin)
+            if(elemFin == "0px"){
+                element.style.height= "200px"
+            }
+            else{
+                element.style.height= "0px"
+            }
+        }
+    </script>
+</head>
+    <body>
+        <div id="menu" class="vertical-menu">
+            <a onClick = "Menu()" href="#" class="active">Home</a>
+            <a onClick = "Menu()" href="#">Link 1</a>
+            <a onClick = "Menu()" href="#">Link 2</a>
+        </div>
+        <div id="container" class="container">
+            <!-- <h3>An h3 Heading</h3> -->
+            <div id="menu-content" class="menu-content">
+                <ul id="menu-ul">
+                    <li onClick = "Menu()"><img src="./menu_btn1.png"/></li>
+                    <li><img src="./menu_btn2.png"/></li>
+                    <li><img src="./menu_btn3.png"/></li>
+                    <li><img src="./menu_btn4.png"/></li>
+                </ul>
+            </div>
+            <header id="hierarchy-content" class="hierarchy-content">
+                <div id= "flip-hier" class="testing">
+                    <button onClick="CollapseHierarchy()"><img src="./collapse_btn.png"/></button>Hierarchy
+                </div>
+            </header>
+            <aside id="inspector-content" class="inspector-content">
+                <div id= "flip-insp">
+                    <button onClick="CollapseInspector()"><img src="./collapse_btn.png"/></button>Inspector
+                </div>
+            </aside>
+            <main id="build-content" class="build-content">
+                Build
+            </main> 
+            <footer id="assets-content" class="assets-content">
+                <div id= "flip-asst">
+                    <button onClick="CollapseAssets()"><img src="./collapse_btn.png"/></button>Assets
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

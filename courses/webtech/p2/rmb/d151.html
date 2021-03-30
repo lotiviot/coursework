@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function changecontent() {
+      var element = document.getElementById("subtitle");
+      var text = element.innerHTML + " We are the best!";
+      element.innerHTML = text;
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <p id="subtitle" onclick="changecontent()">The best website ever!</p>
+  </section>
+</body>
+</html>

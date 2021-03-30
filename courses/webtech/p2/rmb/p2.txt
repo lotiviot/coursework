@@ -1,0 +1,51 @@
+
+                           (Advanced) Web Technologies
+                                  Spring 2021
+                                   Project 2
+
+
+turnin code:  awt_p2
+
+
+This project will use javascript in addition to html5 and css3.
+
+We will build one version of a single-page application (SPA).
+In our version of SPA, we will NOT keep track of "fake" URLs onto the page.
+Instead, we build an interactive application that resides on a single page.
+The project should present an interface similar to that demonstrated
+in class for the PlayCanvas Editor.  The pc*.png files show the type of
+layout that you need to provide, including situations in which various
+parts of the interface have been collapsed.  However, you do NOT need to
+provide all the machinery available on PlayCanvas.  Your version can be
+simple colored, collapsible sections like shown in the demo*.png files
+from the class demo.  Also, you do NOT need to provide the drop-down menu.
+As in the demo, the application should remain totally on the page when
+resizing down to some reasonable minimum.
+
+As usual, grid and flexbox are OK; float and clear should be avoided.
+
+You may use the collapse_btn.png and menu_btn*.png files in your project.
+
+
+Use turnin to submit a tar file containing all files for the project.
+
+p2 will be graded in one of two ways (like p1):
+
+    1. use p2.html as an argument to google chrome on the cmd-line
+         #### note we now require p2.html instead of p1.html ####
+
+    2. python3 -m http.server --cgi 5994 &
+        ## where 5994 is a port that may change; I will choose the port
+        ##   number AT THE TIME OF TESTING
+
+    in chrome on another computer, visit:
+        http://www.cs.mtsu.edu:5994    ## 5994 chgd to same port as above
+
+    When I visit that URL, there should be a file there named p2.html
+    which I will select to load into the browser.
+
+
+
+
+grid-template-columns:300px auto 300px;
+            grid-template-rows: auto auto 300px;

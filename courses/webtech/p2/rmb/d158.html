@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function addClicks() {
+      var list = document.querySelectorAll("section > p");
+      for (var f = 0; f < list.length; f++) {
+        var element = list[f];
+        element.addEventListener("click", changecolor);
+      }
+    }
+    function changecolor(event) {
+      var element = event.target;
+      element.style.backgroundColor = "#999999";
+    }
+    window.addEventListener("load", addClicks);
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <p>Message number 1</p>
+    <p>Message number 2</p>
+    <p>Message number 3</p>
+  </section>
+</body>
+</html>

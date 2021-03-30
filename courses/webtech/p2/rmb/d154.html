@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function addElement() {
+      var element = document.querySelector("section");
+      var newelement = document.createElement("p");
+      element.appendChild(newelement);
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <button type="button" onclick="addElement()">Add Element</button>
+  </section>
+</body>
+</html>

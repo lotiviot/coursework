@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function addClick() {
+      var element = document.querySelector("section > button");
+      element.addEventListener("click", showmessage);
+    }
+    function showmessage() {
+      console.log("You pressed the button");
+    }
+    window.addEventListener("load", addClick);
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <button type="button">Show</button>
+  </section>
+</body>
+</html>

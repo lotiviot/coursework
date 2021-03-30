@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+    <script>
+      function addClicks() {
+        var list = document.querySelectorAll("section > p");
+        for (var f = 0; f < list.length; f++) {
+          var element = list[f];
+          element.addEventListener("click", function(x) {
+              return function(event) {
+                var ourvalue = x;        // ourvalue set to x
+                changecolor(event, ourvalue);
+              };
+          }(f));
+        }
+      }
+      function changecolor(event, ourvalue) {   // does not really chg color
+        var element = event.target;
+        element.innerHTML = "Value " + ourvalue;
+      }
+      window.addEventListener("load", addClicks);
+    </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <p>Message number 1</p>
+    <p>Message number 2</p>
+    <p>Message number 3</p>
+  </section>
+</body>
+</html>

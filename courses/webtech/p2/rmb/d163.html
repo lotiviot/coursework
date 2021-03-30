@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <style>
+    #container {
+      width: 500px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid #999999;
+    }
+    #progressbar {
+      width: 0px;
+      height: 40px;
+      background-color: #000099;
+    }
+  </style>
+  <script>
+    function initiate() {
+      var element = document.getElementById("container");
+      element.addEventListener("mousemove", movebar);
+    }
+    function movebar(event) {
+      var widthbar = event.offsetX - 10;
+      if (widthbar < 0) {
+        widthbar = 0;
+      } else if (widthbar > 500) {
+        widthbar = 500;
+      }
+      var element = document.getElementById("progressbar");
+      element.style.width = widthbar + "px";
+    }
+    window.addEventListener("load", initiate);
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Level</h1>
+    <div id="container">
+      <div id="progressbar"></div>
+    </div>
+  </section>
+</body>
+</html>

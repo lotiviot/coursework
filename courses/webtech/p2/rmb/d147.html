@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <style>
+    .supercolor {
+      background: #0099EE;
+    }
+    .blackcolor {
+      background: #000000;
+    }
+  </style>
+  <script>
+    function changecolor() {
+      var element = document.getElementById("subtitle");
+      element.className = "blackcolor";
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+    <p id="subtitle" class="supercolor" onclick="changecolor()">The best website ever!</p>
+  </section>
+</body>
+</html>

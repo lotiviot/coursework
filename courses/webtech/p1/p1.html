@@ -1,0 +1,171 @@
+<!-- 
+    Tristan Lotivio
+    Dr. Ralph Butler
+    Advanced Web Technologies 4410-001
+    2/18/21
+
+ -->
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+
+    <style>
+    
+    h1{
+        padding: 0;
+        margin: 0;
+        margin-left: -10px;
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+    #container {
+        border: 4px brown solid;   
+        display: grid;  
+        grid-template-areas: 
+                'title title title title title title'
+                'header header header header header header'
+                'header header header header header header'
+                'aside aside aside main main main '
+                'aside aside aside main main main '
+                'aside aside aside main main main '
+                'footer footer footer footer footer footer '
+                'footer footer footer footer footer footer ';
+        }
+    #title-content {
+        grid-area:title;
+        background-color: green;
+        font-weight: bold;
+        margin-bottom: 2px;
+        font-size: 36px;
+    }
+    #header-content {
+        grid-area:header;
+        background-color: orange;
+        margin-bottom: 2px;
+        font-size: 36px;
+        height: 100px;
+    }
+
+    #main-content {
+        grid-area:main;
+        background-color: antiquewhite;
+        font-size: 36px;
+        height: 200px;
+    }
+    #aside-content {
+        grid-area:aside;
+        background-color: red;
+        margin-right: 2px;
+        font-size: 36px;
+        height: 200px;
+    }
+    #footer-content {
+        grid-area:footer;
+        background-color: yellow;
+        margin-top:2px;
+        font-size: 36px;
+        height: 100px;
+    }
+    @media screen and (max-width:999px) {
+        #container {
+            grid-template-areas: 
+                'title title title footer footer footer'
+                'main main main header header header'
+                'main main main header header header'
+                'main main main header header header'
+                'main main main aside aside aside '
+                'main main main aside aside aside '
+                'main main main aside aside aside ';
+        }          
+        
+        #title-content {
+           margin-right:2px;
+        }
+
+        #header-content {
+            height:150px;
+        }
+        #main-content {
+            margin-right: 2px;
+            margin-left: 0px;
+            height:300px;
+        }
+
+        #aside-content {
+            margin-right: 0px;
+            height:150px;
+        }
+        #footer-content {
+            margin-top:0px;
+            margin-bottom:2px;
+            height:initial;
+        }
+    }
+    @media screen and (max-width:750px) {
+        #container {
+            grid-template-areas: 
+                'title'
+                'header'
+                'header'
+                'main'
+                'main '
+                'aside'
+                'aside'
+                'footer'
+                'footer'
+                ;
+        }          
+        
+        #title-content {
+            margin-right:initial;
+        }
+
+        #header-content {
+            height:120px;
+        }
+        #main-content {
+            margin-bottom: 2px;
+            height:120px;
+                }
+
+        #aside-content {
+            margin-bottom: 2px;
+            height:120px;
+                }
+        #footer-content {
+            height:120px;
+                }
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <h1>RMB: p1 with MQs for three sizes (-750 750+ 1000+) </h1>
+
+    <div id="container">
+
+        <!-- <h3>An h3 Heading</h3> -->
+        
+        <header id ="title-content" class = "styled-element">
+            Title
+        </header>
+        <header id="header-content" class="styled-element">
+            Header
+        </header>
+        <aside id="aside-content" class="styled-element">
+            Aside
+        </aside>
+        <main id="main-content" class="styled-element">
+            Main content
+        </main> 
+        <footer id="footer-content" class="styled-element">
+            Footer
+        </footer>
+
+    </div>
+
+</body>
+</html>

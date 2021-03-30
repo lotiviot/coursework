@@ -1,0 +1,17 @@
+d01 uses listings 1-4
+d02 reuses 1 (html) and 2 (css), then 5 and 6
+d03 reuses 1 (html) and 2 (css), then 7 and 8
+
+UNUSED9 shows how to use 
+    importScripts
+which can be used by spawned worker scripts.
+
+d10 **** only worked in the iframe with chrome as long as it was being
+         served from a server (www or pyserver)
+d10 uses 10 (html) and reuses 2 (css) - shares worker in main and iframe
+    and 11 (iframe.html)
+    and 12 (webworker js)
+    and 13 (iframe.js)
+    and 14 (worker js)
+
+rmb* demo shows that work occurs in threads while main is busy

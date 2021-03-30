@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+    function initiate() {
+      var mainelement = document.getElementById("mainsection");
+      var list = mainelement.getElementsByTagName("p");
+      var element = list[0];
+      console.log("The id is: " + element.id);
+    }
+  </script>
+</head>
+<body onload="initiate()">
+  <section id="mainsection">
+    <h1>Website</h1>
+    <p id="subtitle">The best website ever!</p>
+  </section>
+</body>
+</html>

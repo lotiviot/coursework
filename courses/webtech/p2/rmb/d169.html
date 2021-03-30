@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <script>
+   var stock = 5;
+   function sold(amount) {
+      if (amount > stock) {
+        var error = {
+          name: "ErrorStock",
+          message: "Out of stock"
+        };
+        throw error;
+      } else {
+        stock = stock - amount;
+      }
+   }
+   try {
+     sold(8);
+   } catch(error) {
+     console.log(error.message);
+   }
+</script>
+</head>
+<body>
+  <section>
+    <h1>Website</h1>
+  </section>
+</body>
+</html>

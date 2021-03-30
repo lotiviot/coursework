@@ -1,0 +1,50 @@
+
+// RMB: I re-wrote the author's demo.php script for node.js
+
+const WebSocketServer = require('ws').Server;
+
+const wss = new WebSocketServer( { port: 5860 } );
+
+const fs =  require('fs')
+
+wss.on('listening', function() {
+    console.log("listening on port 5860");
+    // console.log("curr clients: ",wss.clients);
+});
+fs.readFile('votecnts.txt', 'utf-8', (err, data) => { 
+    if (err) throw err; 
+  
+    // Converting Raw Buffer to text 
+    // data using tostring function. 
+    temp = data;
+    tempArr = temp.split(" ")
+    //console.log(tempArr);
+    c1 = tempArr[0] 
+    c2 = tempArr[1]
+})
+wss.on('connection', function(ws) {
+    // console.log("curr clients: ",wss.clients);
+    ws.on('message', function(charMsg) {
+        if (charMsg == "hello") {
+            ws.send("hello human");
+        }
+        else if (charMsg == "Cand1") {
+            c1++
+            var content = c1 + " " + c2
+            fs.writeFileSync('votecnts.txt',content)
+            ws.send(c1);
+        }
+        else if (charMsg == "Cand2") {
+            c2++
+            var content = c1 + " " + c2
+            fs.writeFileSync('votecnts.txt',content)
+            ws.send(c2);
+        }
+        else if (charMsg == "Send") {
+            ws.send(c1 + " " + c2);
+        }
+        else {
+            ws.send("I don't understand");
+        }
+    });
+});

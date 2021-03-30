@@ -1,0 +1,30 @@
+#,Link,Evidence,Type,Credibility,Revelance,H1,H2,H3,H4,H5
+,,,,,,,,,,
+,,,,,,Brazil will be significantly less stable than now.,Brazil will be somewhat less stable than now.,Brazil's stability will remain the same.,Brazil will be somewhat more stable than now.,Brazil will be significantly more stable than now.
+E1,https://time.com/5946401/brazil-covid-19-vaccines-bolsonaro/,Bonsonaro wore a mask for the first time ever in a press conference and signed nto law three new measures designed to speed up the purchase of vaccines.,Political ,High,High,II,II,N,CC,C
+E2,https://time.com/5946401/brazil-covid-19-vaccines-bolsonaro/,"Bonsonaro's government announced it was in advanced talks to purchase vaccine doses from Pfizer and Johnson & Johnson. “We are working and have been working tirelessly since the beginning in the fight against the pandemic,” he said. “We are an example to the world.”",Political ,High,High,C,CC,I,I,II
+E3,https://time.com/5946401/brazil-covid-19-vaccines-bolsonaro/,Bonsonaro is putting COVID measures in place for political reasons,Political ,High,High,I,C,CC,II,II
+E5,https://www.reuters.com/article/us-health-coronavirus-brazil-marcelo/brazil-sees-record-covid-19-deaths-as-pot-bangers-jeer-bolsonaro-speech-idUSKBN2BF2IJ,"Bolsonaro is under mounting pressure to control the outbreak, after repeatedly playing down the virus, sowing doubts about vaccines and fighting state and local lockdown measures.",Political ,High,High,CC,CC,I,II,II
+E6,https://www.reuters.com/article/us-health-coronavirus-brazil-marcelo/brazil-sees-record-covid-19-deaths-as-pot-bangers-jeer-bolsonaro-speech-idUSKBN2BF2IJ,"Only 2.6% of Brazilian adults have so far received two vaccine doses, according to a Fiocruz survey, while 7.6% of the population, or 12.1 million people, have received one shot.",Political ,High,High,C,CC,I,II,II
+E7,https://www.aljazeera.com/news/2021/3/16/brazil-next-health-minister-says-he-will-follow-bolsonaro-plan,"Brazil had a surge in cases - 2,841 deaths and 83,926 new infections over 24 hours.",Political ,High,High,C,CC,I,II,II
+E8,https://www.aljazeera.com/news/2021/3/16/brazil-next-health-minister-says-he-will-follow-bolsonaro-plan,"Brazil is the second-highest state with the highest amount of COVID cases and deaths in the world - 11.5 million cases and 279,000 deaths to date.",Political ,High,High,C,CC,I,II,II
+E9,https://www.aljazeera.com/news/2021/3/16/brazil-next-health-minister-says-he-will-follow-bolsonaro-plan,A recent poll revealed that 61% of Brazilians disapprove of Bolsonaro's handling of the COVID-19 pandemic.,Political ,High,High,CC,CC,I,II,II
+E10,https://www.hrw.org/world-report/2021/country-chapters/brazil,"Bolsonaro downplayed COVID-19, calling it a ""little flu"".",Social/Political,Very High,Very High,C,CC,I,II,II
+E11,https://www.hrw.org/world-report/2021/country-chapters/brazil,Bolsonaro withheld information and data regarding the virus from the Brazilian public.,Social/Political,Very High,Very High,CC,CC,I,II,II
+E12,https://www.hrw.org/world-report/2021/country-chapters/brazil,Bolsonaro fired his health minister for defending the WHO's recommendations and his replacement quit in opposition to the Bolsonaro's advocacy of an unproven drug to treat COVID-19.,Social/Political,Very High,Very High,CC,CC,I,II,II
+E13,https://www.hrw.org/world-report/2021/country-chapters/brazil,"Congress passed a bill forcing the government to provide emergency healthcare and other assistance to help Indigenous people cope with the pandemic. President Bolsonaro partially vetoed it, but Congress overturned the veto.",Social/Political,Very High,Very High,C,CC,I,II,II
+E14,https://www.hrw.org/world-report/2021/country-chapters/brazil,the Supreme Court ordered the Bolsonaro administration to draft a plan to fight the spread of Covid-19 in Indigenous territories.,Social/Political,Very High,Very High,II,I,I,CC,C
+E15,https://www.washingtonpost.com/world/the_americas/brazil-virus-cases-global-threat/2021/03/08/3de3f488-7e82-11eb-8c5e-32e47b42b51b_story.html,"Rio de Janeiro announced that anyone over the age of 60 could get their COVID vaccine. More than 80,000 people fit that description, but they only had a total of 6,100 doeses.",Social/Political,High,High,CC,CC,I,II,II
+E16,https://www.washingtonpost.com/world/the_americas/brazil-virus-cases-global-threat/2021/03/08/3de3f488-7e82-11eb-8c5e-32e47b42b51b_story.html,Bolsonaro has 30% support from Brazilian citizens. ,Social/Political,High,High,CC,CC,I,II,II
+E17,,,,,,,,,,
+E18,,,,,,,,,,
+E19,,,,,,,,,,
+E20,,,,,,,,,,
+E21,,,,,,,,,,
+E22,,,,,,,,,,
+E23,,,,,,,,,,
+E24,,,,,,,,,,
+E25,,,,,,,,,,
+E26,,,,,,,,,,
+E27,,,,,,,,,,
+E28,,,,,,,,,,

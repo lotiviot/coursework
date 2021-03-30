@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+  <style>
+    section {
+      text-align: center;
+    }
+    #block {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      margin-top: 100px;
+      background-color: #990000;
+    }
+  </style>
+  <script>
+    function detectkey(event) {
+      var element = document.getElementById("block");
+      var size = element.clientWidth;
+      var code = event.key;
+      switch (code) {
+        case "ArrowUp":
+          size += 10;
+          break;
+        case "ArrowDown":
+          size -= 10;
+          break;
+      }
+      if (size < 50) {
+        size = 50;
+      }
+      element.style.width = size + "px";
+      element.style.height = size + "px";
+    }
+    window.addEventListener("keydown", detectkey);
+  </script>
+</head>
+<body>
+  <section>
+    <div id="block"></div>
+  </section>
+</body>
+</html>
