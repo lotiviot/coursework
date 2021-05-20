@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Video on Canvas</title>
+  <style>
+    /*
+    #canvas { border: 1px solid #000000; }
+    */
+    section {
+      float: left;
+    }
+  </style>
+  <script>
+    var canvas, video;
+    function initiate() {
+      var element = document.getElementById("canvas");
+      canvas = element.getContext("2d");
+      video = document.getElementById("media");
+
+      canvas.translate(483, 0);
+      canvas.scale(-1, 1);
+      setInterval(processFrames, 33);
+    }
+    function processFrames() {
+      canvas.drawImage(video, 0, 0);
+    }
+    window.addEventListener("load", initiate);
+  </script>
+</head>
+<body>
+    <h3>RMB: video on canvas (trailer.mp4 and trailer.ogg)</h3>
+    <h3>note use of scale(-1,1)</h3>
+  <section>
+    <video id="media" width="483" height="272" autoplay>
+      <source src="trailer.mp4">
+      <source src="trailer.ogg">
+    </video>
+  </section>
+  <section>
+    <canvas id="canvas" width="483" height="272"></canvas>
+  </section>
+</body>
+</html>

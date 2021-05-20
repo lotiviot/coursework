@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Snapshot Application</title>
+  <style>
+    section {
+      float: left;
+      width: 320px;
+      height: 240px;
+      border: 1px solid #000000;
+    }
+  </style>
+  <script>
+    var video, canvas;
+    function initiate() {
+      var promise = navigator.mediaDevices.getUserMedia({video: true});
+      promise.then(success);
+      promise.catch(showerror);
+    }
+    function success(stream) {
+      var element = document.getElementById("canvas");
+      canvas = element.getContext("2d");
+      var player = document.getElementById("player");
+      player.addEventListener("click", snapshot);
+
+      video = document.getElementById("media");
+      video.srcObject = stream;
+      video.play();
+    }
+    function showerror(event) {
+      console.log("Error: " + event.name);
+    }
+    function snapshot() {
+      canvas.drawImage(video, 0, 0, 320, 240);
+    }
+    window.addEventListener("load", initiate);
+  </script>
+</head>
+<body>
+    <h3>RMB: canvas snapshot app (note function snapshot())</h3>
+    <h3>uses webcam - click left window to capture snap into right window</h3>
+  <section id="player">
+    <video id="media" width="320" height="240"></video>
+  </section>
+  <section>
+    <canvas id="canvas" width="320" height="240"></canvas>
+  </section>
+</body>
+</html>

@@ -2,7 +2,7 @@ addEventListener('message', received);
 
 function received(e){
   var val;
-  var maxiter = 5000000000; // 200000000 may be enough on www ??
+  var maxiter = 1000000000; // 200000000 may be enough on www ??
   for (var i=0; i < maxiter; i++)    // may need to chg maxiter depending machine speed
   {
       val = Math.sqrt(i + 7777.7777);

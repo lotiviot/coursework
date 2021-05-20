@@ -10,11 +10,11 @@ function initiate(){
   var interactbutton = document.getElementById('interactbutton');
   interactbutton.addEventListener('click', interact);
 
-  worker1 = new Worker('rmbWorkerParallel.js');
+  worker1 = new Worker('./rmbWorkerParallel.js');
   worker1.addEventListener('message', received1);
   worker1.addEventListener('error', error);
 
-  worker2 = new Worker('rmbWorkerParallel.js');
+  worker2 = new Worker('./rmbWorkerParallel.js');
   worker2.addEventListener('message', received2);
   worker2.addEventListener('error', error);
 }

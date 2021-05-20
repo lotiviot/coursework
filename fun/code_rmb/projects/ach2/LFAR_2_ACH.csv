@@ -1,0 +1,18 @@
+#,Link,Evidence,Credibility,Revelance,H1,H2
+,,,,,,
+,,,,,Social and Political impacts likey to improve in 12 months,Social and Political impacts unlikey to improve in 12 months
+E1,https://www.hrw.org/news/2021/03/26/argentina-abusive-covid-19-measures-northern-province,Countries/leaders are forcing people into isolation and quarantine centers.,Very High,Very High,I,C
+E2,https://www.hrw.org/news/2021/03/26/argentina-abusive-covid-19-measures-northern-province,People with positive cases are quarantining with people who test negative in quarantine centers in multiple countries.,Very High,Very High,I,C
+E3,https://www.hrw.org/world-report/2021/country-chapters/el-salvador,Many leaders allow security/military forces to act violently on people who break quarantine.,Very High,Very High,I,C
+E5,https://ourworldindata.org/covid-vaccinations,"Israel, the UK, and the US are leading in vaccine rollout.",Very High,High,C,I
+E6,https://www.dw.com/en/covid-japanese-frustrated-at-slow-vaccine-rollout/a-57362649,Japan lacking in supplies and equipment to administer vaccines quickly and efficiently.,Moderate,Moderately High ,I,C
+E7,,Countries relying on the AstraZeneca vaccine have a slower vaccine rollout.,Moderate,Moderately High ,I,C
+E8,https://drive.google.com/file/d/1LqoK1lK4ufIQ3OisLVPBT99ikAD87wfX/view,Many leaders and media outlets spread a large amount of narratives regarding the coronavirus globally.,Very High,Very High,I,C
+E9,https://drive.google.com/file/d/1LqoK1lK4ufIQ3OisLVPBT99ikAD87wfX/view,"Princeton found 5,000 independent misinformation narratives spread by governments and news outlets in over 80 countries. ",Very High,Very High,I,C
+E10,https://www.bbc.com/news/56100076,20% of people in Africa said they would not take the vaccine because they fear the COVID vaccine is less safe compared to other vaccines.,High,High,I,C
+E11,https://www.bbc.com/news/56100076,Africa lacking vaccinations supllies - the majority of shipments they receive have the AstraZeneca brand.,High,High,I,C
+E12,https://www.theguardian.com/global-development/2021/feb/22/world-faces-pandemic-human-rights-abuses-covid-19-antonio-guterres,"In several countries, journalists experience violence for reporting on COVID-19 and countries' disinformation campaigns.",High,High,I,C
+E13,https://features.hrw.org/features/features/covid/index.html#violence,Protesters have been subject to violence and/or  killed in at least 18 countries for protesting against COVID guidelines or lack there of.,Very High,Very High,I,C
+E14,https://www.hrw.org/news/2021/02/11/covid-19-triggers-wave-free-speech-abuse,Authorities in 51 countries have regulated and adopted COVID guidelines to prevent the spread of COVID,Very High,Very High,C,I
+E15,https://www.hrw.org/news/2020/03/19/human-rights-dimensions-covid-19-response,Authorities and leaders in many countries have damaged public trust in their government due to civilian violence and withholding information about COVID-19 to the public.,Very High,Very High,I,C
+E16,https://www.worldometers.info/coronavirus/country/tanzania/,"Tanzania has not reported positive COVID cases and deaths since May 2020, and is withholding information,",Very High,High,I,C

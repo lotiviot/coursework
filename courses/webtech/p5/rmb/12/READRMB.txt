@@ -1,0 +1,19 @@
+
+d08 should be run via the pyserver to make sure files can be loaded;
+    may need to copy threeJS to here for pyserver to see it and alter
+    d08.html to look here for it
+    OR better idea, create  link   ln -s ../threeJS
+
+d09 requires:
+    ColladaLoader.js from ../threeJS/*  ## to load the model
+    police.dae from ../content          ## the model to load
+    SFERIFF.JPG                         ## a texture for the model
+    SFERIFFI.JPG                        ## a texture for the model
+
+d10
+    - used to cause an error to print on the console, but I commented
+      out a line that invoked mygame.create since it could (probably would)
+      be invoked from two places
+    - NOTE that if you maneuver the car to hit the green sphere which is
+    placed randomly in the scene, the green sphere moves to a new spot.
+    NOTE also, that the car bumps off the walls.

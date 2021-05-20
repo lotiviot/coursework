@@ -1,0 +1,54 @@
+
+                           (Advanced) Web Technologies
+                                  Spring 2021
+                                   Project 5
+
+
+turnin code:  awt_p5
+
+
+Provide a single web page that has a radio button at the top with 2 options.
+The first option should be for 2D and the second for 3D.  There should
+also be 2 "number" values which ranges between 400 and 900, inclusive, in
+increments of 100, with default value of 500.  The first of these 2 values
+is to provide the size of a square canvas.  The second is to provide the
+number of dots to be painted at random locations inside the square/cube.
+All 3 items should have an associated label to make their purpose clear.
+There should also be a button at the top labeled "Run!".  When pressed,
+it should cause all the graphic items to be drawn onto the canvas.  If 3D,
+the graphic items should be rotatable, as in the class demo.
+
+The areas inside and outside the circle/sphere should be different colors.
+Also, the color for the dots should differ from those used for the
+square/cube and circle/sphere.  Also, the dots inside the circle/sphere
+should be a different color from those outside the circle/sphere.  Any dart
+on the circle/sphere should be counted as inside.
+
+Hint about radio buttons:
+    a list of radio buttons can be examined to determine which has true for
+    the attribute "checked"
+Hints about the 3D:
+1.  visible edges on a cube:
+        https://threejs.org/docs/#api/en/geometries/EdgesGeometry
+2.  transparent cube:
+        transparent and opacity options on MeshBasicMaterial
+3.  pivot as parent of dots (instead of scene);
+        pivot can rotate when mouse moves:  pivot = new THREE.Object3D();
+
+
+Use turnin to submit a tar file containing all files for the project.
+
+p5 will be graded in one of two ways (like p1):
+
+    1. use p5.html as an argument to google chrome on the cmd-line
+         #### note we now require p5.html instead of p1.html ####
+
+    2. python3 -m http.server --cgi 5994 &
+        ## where 5994 is a port that may change; I will choose the port
+        ##   number AT THE TIME OF TESTING
+
+    in chrome on another computer, visit:
+        http://www.cs.mtsu.edu:5994    ## 5994 chgd to same port as above
+
+    When I visit that URL, there should be a file there named p5.html
+    which I will select to load into the browser.

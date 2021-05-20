@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>P5</title>
+  <script src="three.js"></script>
+  <script src="webgl.js"></script>
+</head>
+<body>
+    <h3>P5</h3>
+  <form>
+    <input type="radio" name="radio" value="2d" checked>2d
+    <input type="radio" name="radio" value="3d">3d
+    
+    <br><br>
+    Dimension Square Canvas: <input type="number" step="100" id="length" name="length" value="500" min="400" max="900">
+    <br><br>
+    Number of Dots: <input type="number" step="100" id="count" name="count" value="500" min="400" max="900">
+    <br><br>
+    <input type="button" label="Run!" name="Run!" value="Run!" id="Run">
+    <br><br>
+  </form>
+  <section>
+    <canvas width="900px" height="900px" id="canvas"></canvas>
+  </section>
+</body>
+</html>
