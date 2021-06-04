@@ -2,6 +2,9 @@
 def main():
     a = 2
     print(a)
+    danicasfunction()
 
 def danicasfunction():
     return "OwO"
+
+main()
